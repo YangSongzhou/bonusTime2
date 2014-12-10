@@ -1,0 +1,496 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  text-align: center;
+  color: #000;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.block {
+  text-align: center;
+  margin: auto;
+}
+
+.no-js {
+  height: 100%;
+}
+
+body {
+  color: white;
+  font-family: 'Lucida Grande', Verdana, Arial;
+  font-size: 12px;
+  background: url(../images/background.jpg) 0 90% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.footer {
+  width: 100%;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+}
+
+#container {
+}
+
+.stage {
+  width: 100%;
+  height: 600px;
+  -webkit-transition: -webkit-transform 2s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-perspective: 800px; /* For compatibility with iPhone 3.0, we leave off the units here */
+  -webkit-perspective-origin: 50% 50%;
+}
+
+.shape {
+  position: relative;
+  top: 200px;
+  margin: 0 auto;
+  height: 200px;
+  width: 250px;
+  -webkit-transform-style: preserve-3d;
+}
+
+.insideSharp {
+  position: relative;
+  top: 0px;
+  margin: 0 auto;
+  height: 200px;
+  width: 250px;
+  -webkit-transform-style: preserve-3d;
+}
+
+.plane {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border: 3px solid white;
+  -webkit-border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+  font-family: Times, serif;
+  font-size: 110pt;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: -webkit-transform 2s, opacity 2s;
+}
+
+.blankColor {
+  background-color: rgb(200, 200, 200);
+}
+
+.card1 {
+  background: url(../images/card1.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.card2 {
+  background: url(../images/card2.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.card3 {
+  background: url(../images/card3.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.card4 {
+  background: url(../images/card4.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.bonus1 {
+  background: url(../images/bonus1.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.bonus2 {
+  background: url(../images/bonus2.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.bonus3 {
+  background: url(../images/bonus3.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.bonus4 {
+  background: url(../images/bonus4.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+.showBack {
+  -webkit-backface-visibility: visible;
+}
+
+.hideBack {
+  -webkit-backface-visibility: hidden;
+}
+
+.insideFace {
+  /*background-image: url(../images/ipad-mini3.png);*/
+  /*background-size: 100% 100%;*/
+  /*-webkit-backface-visibility: hidden;*/
+  opacity: 1;
+}
+
+.cube > .one {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotateX(90deg) translateZ(125px);
+}
+
+.cube > .two {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) translateZ(125px);
+}
+
+.cube > .three {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotateY(90deg) translateZ(125px);
+}
+
+.cube > .four {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotateY(180deg) translateZ(125px);
+}
+
+.cube > .five {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotateY(-90deg) translateZ(125px);
+}
+
+.cube > .six {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotateX(-90deg) translateZ(125px) rotate(180deg);
+}
+
+.cube > .seven {
+  opacity: 0.5;
+  -webkit-transform: scale3d(0.7, 0.7, 0.7) rotateX(-90deg) translateZ(160px);
+}
+
+.cube > .eight {
+  opacity: 0.5;
+  -webkit-transform: scale3d(0.7, 0.7, 0.7) rotateX(90deg) translateZ(160px);
+}
+
+.cube > .nine {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateZ(125px);
+}
+
+.cube > .nineBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateZ(125px) rotateY(180deg);
+}
+
+.cube > .ten {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) rotateY(90deg) translateZ(125px);
+}
+
+.cube > .tenBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) rotateY(-90deg) translateZ(-125px);
+}
+
+.cube > .eleven {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateZ(-125px) rotateY(180deg);
+}
+
+.cube > .elevenBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateZ(-125px);
+}
+
+.cube >.twelve {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) rotateY(270deg) translateZ(125px);
+}
+
+.cube >.twelveBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) rotateY(90deg) translateZ(-125px);
+}
+
+.cubeShow {
+  -webkit-animation: cubeSpin 8s infinite linear;
+}
+
+@-webkit-keyframes cubeSpin {
+  from { -webkit-transform: rotateY(0deg); }
+  to   { -webkit-transform: rotateY(-360deg); }
+}
+
+.ring > .one {
+  opacity: 0.5;
+  -webkit-transform: translateZ(330px) rotateZ(180deg);
+}
+
+.ring > .two {
+  opacity: 0.5;
+  -webkit-transform: rotateY(45deg) translateZ(330px) rotateZ(-180deg);
+}
+
+.ring > .three {
+  opacity: 0.5;
+  -webkit-transform: rotateY(90deg) translateZ(330px) rotateZ(180deg);
+}
+
+.ring > .four {
+  opacity: 0.5;
+  -webkit-transform: rotateY(225deg) translateZ(330px) rotateZ(180deg);
+}
+
+.ring > .five {
+  opacity: 0.5;
+  -webkit-transform: rotateY(270deg) translateZ(330px) rotateZ(-180deg);
+}
+
+.ring > .six {
+  opacity: 0.5;
+  -webkit-transform: rotateY(135deg) translateZ(330px) rotateZ(180deg);
+}
+
+.ring > .seven {
+  opacity: 0.5;
+  -webkit-transform: rotateY(180deg) translateZ(330px) rotateZ(180deg);
+}
+
+.ring > .eight {
+  opacity: 0.5;
+  -webkit-transform: rotateY(315deg) translateZ(330px) rotateZ(90deg);
+}
+
+.ringDown > .one {
+  opacity: 0;
+  -webkit-transform: translateZ(330px) rotateY(90deg) ;
+}
+
+.ringDown > .two {
+  opacity: 0;
+  -webkit-transform: rotateY(45deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .three {
+  opacity: 0;
+  -webkit-transform: rotateY(90deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .four {
+  opacity: 0;
+  -webkit-transform: rotateY(225deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .five {
+  opacity: 0;
+  -webkit-transform: rotateY(270deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .six {
+  opacity: 0;
+  -webkit-transform: rotateY(135deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .seven {
+  opacity: 0;
+  -webkit-transform: rotateY(180deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .eight {
+  opacity: 0;
+  -webkit-transform: rotateY(315deg) translateZ(330px) rotateY(90deg);
+}
+
+.ringDown > .nine {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(-435px);
+}
+
+.ringDown > .ten {
+   opacity: 1;
+   -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(-145px);
+}
+
+.ringDown > .eleven {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(145px);
+}
+
+.ringDown >.twelve {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(435px);
+}
+
+.ringDown > .nineBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(-435px) rotateY(180deg);
+}
+
+.ringDown > .tenBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(-145px) rotateY(180deg);
+}
+
+.ringDown > .elevenBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(145px) rotateY(180deg);
+}
+
+.ringDown >.twelveBack {
+  opacity: 1;
+  -webkit-transform: scale3d(0.7, 0.9, 0.7) translateX(435px) rotateY(180deg);
+}
+
+.card1TurnBack {
+  -webkit-animation: turn1 3s;
+}
+
+@-webkit-keyframes turn1 {
+  0%{-webkit-transform: translateX(-305px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform: translateX(-305px) rotateY(180deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card1TurnFront{
+  -webkit-animation: turn1F 3s;
+}
+
+@-webkit-keyframes turn1F {
+  0%{-webkit-transform: translateX(-305px) rotateY(-180deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform:  translateX(-305px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card2TurnBack {
+  -webkit-animation: turn2 3s;
+}
+
+@-webkit-keyframes turn2 {
+  0%{-webkit-transform: translateX(-101px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform: translateX(-101px) rotateY(180deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card2TurnFront{
+  -webkit-animation: turn2F 3s;
+}
+
+@-webkit-keyframes turn2F {
+  0%{-webkit-transform: translateX(-101px) rotateY(-180deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform:  translateX(-101px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card3TurnBack {
+  -webkit-animation: turn3 3s;
+}
+
+@-webkit-keyframes turn3 {
+  0%{-webkit-transform: translateX(101px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform: translateX(101px) rotateY(180deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card3TurnFront{
+  -webkit-animation: turn3F 3s;
+}
+
+@-webkit-keyframes turn3F {
+  0%{-webkit-transform: translateX(101px) rotateY(-180deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform:  translateX(101px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card4TurnBack {
+  -webkit-animation: turn4 3s;
+}
+
+@-webkit-keyframes turn4 {
+  0%{-webkit-transform: translateX(305px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform: translateX(305px) rotateY(180deg) scale3d(0.7, 0.9, 0.7);}
+}
+
+.card4TurnFront{
+  -webkit-animation: turn4F 3s;
+}
+
+@-webkit-keyframes turn4F {
+  0%{-webkit-transform: translateX(305px) rotateY(-180deg) scale3d(0.7, 0.9, 0.7);}
+  100%{-webkit-transform:  translateX(305px) rotateY(0deg) scale3d(0.7, 0.9, 0.7);}
+}
