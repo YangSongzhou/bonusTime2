@@ -208,16 +208,16 @@ module.exports = function (grunt) {
     },
 
     // The following *-min tasks produce minified files in the dist folder
-    imagemin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/images',
-          src: '{,*/}*.{gif,jpeg,jpg,png}',
-          dest: '<%= config.dist %>/images'
-        }]
-      }
-    },
+    //imagemin: {
+    //  dist: {
+    //   files: [{
+    //      expand: true,
+    //      cwd: '<%= config.app %>/images',
+    //      src: '{,*/}*.{gif,jpeg,jpg,png}',
+    //      dest: '<%= config.dist %>/images'
+    //    }]
+    //  }
+    //},
 
     svgmin: {
       dist: {
@@ -288,6 +288,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
+        	'images/{,*/}*.*',
             'images/{,*/}*.webp',
             '{,*/}*.html',
             'styles/fonts/{,*/}*.*'
@@ -322,7 +323,7 @@ module.exports = function (grunt) {
       ],
       dist: [
         'copy:styles',
-        'imagemin',
+        //'imagemin',
         'svgmin'
       ]
     }
